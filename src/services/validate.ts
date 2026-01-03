@@ -198,7 +198,9 @@ function validateWithSchema(
       } else if (pi.target === "xml-xi-error") {
         let range = new Range(parser.line - 1, parseInt(getAttr("parent-start"), 10), parser.line - 1, parseInt(getAttr("parent-col"), 10));
 
-        diagnostics.push(new Diagnostic(range, "Could not resolve XInclude"));
+        const err = getAttr("err");
+        const message = err ? `Could not resolve XInclude: ${err}` : "Could not resolve XInclude";
+        diagnostics.push(new Diagnostic(range, message));
       } else if (pi.target === "xml-xi-nested-enter") {
         nestedIncludeStack.push(getAttr("uri"));
       } else if (pi.target === "xml-xi-nested-leave") {

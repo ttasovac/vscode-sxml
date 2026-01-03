@@ -20,7 +20,7 @@ export class XMLDocumentManager {
   private async setFullDocumentText() {
     // resolve XIncludes (NB the function checks settings to decide whether to actually resolve or not).
     if (this.document) {
-      this.documentText = await resolveXIncludes(this.document.getText());
+      this.documentText = await resolveXIncludes(this.document.getText(), 0, this.document.uri);
     }
   }
 

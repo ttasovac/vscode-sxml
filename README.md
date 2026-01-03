@@ -18,7 +18,7 @@ In 2024, this extension was awarded the [Rahtz Prize for TEI Ingenuity](https://
 * Makes schema aware suggestions for elements, attributes, and attribute values.
 * When available, shows documentation from schema for elements, attributes, and attribute values.
 * Wrap selected text with tags using Ctrl+e
-* Partial XInclude support (configurable): only `<xi:include href="URL_TO_XML">` is supported. More support is scheduled for future releases.
+* Partial XInclude support (configurable): supports `parse="xml"` (explicit or default), IRI `href` values (converted to URI form), and the XPointer `element()` scheme for positional paths or `xml:id`/`id` anchors with positional child steps. Other XPointer schemes and `parse="text"` are not supported yet.
 
 ## Usage
 

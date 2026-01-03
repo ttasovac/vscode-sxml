@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <section xml:id="intro">
+    <p>Intro text.</p>
+  </section>
+  <section id="body">
+    <p>Body text.</p>
+  </section>
+</root>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="xi_xpointer_target.xml" parse="xml" xpointer="element(intro/1)"/>
+</root>
